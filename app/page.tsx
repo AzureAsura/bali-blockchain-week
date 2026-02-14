@@ -6,6 +6,7 @@ import FloatingLines from '@/components/FloatingLines'
 import About from '@/components/main/About'
 import Gallery from '@/components/main/Gallery'
 import Sponsor from '@/components/main/Sponsor'
+import Footer from '@/components/Footer'
 
 const page = () => {
   return (
@@ -16,6 +17,7 @@ const page = () => {
       <About/>
       <Gallery/>
       <Sponsor/>
+      <Footer/>
     </div>
   )
 }

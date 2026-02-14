@@ -1,13 +1,28 @@
 import React from 'react'
 import { Sprout, Zap, Shield, Globe } from 'lucide-react'
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
 
 const About = () => {
-    const stats = [
-        { label: "Total Yield", value: "$420M+", icon: <Zap className="text-orange-500" /> },
-        { label: "Active Builders", value: "12K+", icon: <Sprout className="text-orange-500" /> },
-        { label: "Nodes Secured", value: "850+", icon: <Shield className="text-orange-500" /> },
-        { label: "Countries", value: "45+", icon: <Globe className="text-orange-500" /> },
-    ];
+    const features = [
+        {
+            title: "Global Networking",
+            desc: "Connect with industry leaders, developers, and investors from over 50 countries in an intimate setting."
+        },
+        {
+            title: "Deep Dive Workshops",
+            desc: "Hands-on sessions covering ZK-proofs, modular blockchains, and the future of decentralized finance."
+        },
+        {
+            title: "Security Summit",
+            desc: "Dedicated tracks for smart contract auditing and institutional-grade security infrastructure."
+        }
+    ]
 
     return (
         <section className='relative py-10 bg-black overflow-hidden'>
@@ -28,9 +43,7 @@ const About = () => {
                         </div>
 
                         <p className='text-gray-400 text-lg md:text-xl leading-relaxed max-w-xl'>
-                            Kami membangun ekosistem digital yang "subur" bagi para inovator.
-                            Layaknya sebuah lahan pertanian yang dikelola secara terdesentralisasi,
-                            kami menyemai ide-ide brilian hingga menjadi protokol raksasa yang mengubah dunia.
+                            Bali Blockchain Weeks is a flagship event to discover the future of blockchain. Founded and managed by brilliant individuals deeply immersed in the crypto space, our conference brings together industry leaders, innovators, and enthusiasts.
                         </p>
 
                     </div>
@@ -41,9 +54,9 @@ const About = () => {
 
                         <div className='relative z-10 w-full aspect-square lg:aspect-auto lg:h-[500px] overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl shadow-orange-500/10 group'>
                             <img
-                                src="https://coinfest.asia/_next/image?url=https%3A%2F%2Fwojgrioccmbywgtruwfl.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2FMedia%2520Folders%2FCoinfest%2520Asia%25202026%2Fhomepage-speakers%2Ftraders-card.png&w=1080&q=75" 
+                                src="https://coinfest.asia/_next/image?url=https%3A%2F%2Fwojgrioccmbywgtruwfl.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2FMedia%2520Folders%2FCoinfest%2520Asia%25202026%2Fhomepage-speakers%2Ftraders-card.png&w=1080&q=75"
                                 alt="Web3 Farm Ecosystem"
-                                className='w-full h-full object-cover transition-transform duration-700'
+                                className='w-full h-full object-cover'
                             />
 
                         </div>
@@ -51,19 +64,33 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className='mt-24 pt-12 border-t border-white/5 grid md:grid-cols-3 gap-8'>
-                    <div className='flex gap-4 items-start'>
-                        <div className='h-2 w-2 rounded-full bg-orange-500 mt-2 shrink-0 animate-pulse' />
-                        <p className='text-sm text-gray-500'><strong className='text-white'>Decentralized Growth:</strong> Mekanisme voting komunitas yang memastikan ekosistem tetap sehat.</p>
-                    </div>
-                    <div className='flex gap-4 items-start'>
-                        <div className='h-2 w-2 rounded-full bg-orange-500 mt-2 shrink-0 animate-pulse' />
-                        <p className='text-sm text-gray-500'><strong className='text-white'>Sustainable Yield:</strong> Fokus pada ekonomi jangka panjang, bukan sekadar hype sesaat.</p>
-                    </div>
-                    <div className='flex gap-4 items-start'>
-                        <div className='h-2 w-2 rounded-full bg-orange-500 mt-2 shrink-0 animate-pulse' />
-                        <p className='text-sm text-gray-500'><strong className='text-white'>Security First:</strong> Lahan digital yang aman dengan audit smart contract berlapis.</p>
-                    </div>
+                <div className='mt-24 pt-12 border-t border-white/5'>
+                    <Carousel
+                        opts={{
+                            align: "start",
+                            loop: false,
+                        }}
+                        className="w-full"
+                    >
+                        <CarouselContent className="-ml-4 flex md:grid md:grid-cols-3 md:gap-8 md:ml-0">
+                            {features.map((feature, index) => (
+                                <CarouselItem
+                                    key={index}
+                                    className="pl-4 basis-[85%] md:basis-full md:pl-0"
+                                >
+                                    <div className='flex gap-4 items-start h-full'>
+                                        <div className='h-2 w-2 rounded-full bg-orange-500 mt-2 shrink-0 animate-pulse shadow-[0_0_8px_rgba(249,115,22,0.6)]' />
+                                        <p className='text-sm text-gray-500 leading-relaxed'>
+                                            <strong className='text-white block md:inline mb-1 md:mb-0'>
+                                                {feature.title}:
+                                            </strong>{" "}
+                                            {feature.desc}
+                                        </p>
+                                    </div>
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+                    </Carousel>
                 </div>
             </div>
         </section>

@@ -74,13 +74,13 @@ const Hero = () => {
                 </div>
             </main>
 
-            <div className="relative z-20 bg-orange-400 py-6 shadow-[0_-10px_40px_rgba(255,115,0,0.3)]">
+            {/* <div className="relative z-20 bg-orange-400 py-6 shadow-[0_-10px_40px_rgba(255,115,0,0.3)]">
                 <ScrollVelocity
                     texts={['BALI BLOCKCHAIN WEEK 2026 •']}
                     velocity={60}
                     className="text-black font-black text-3xl md:text-5xl uppercase tracking-tighter"
                 />
-            </div>
+            </div> */}
 
 
 
