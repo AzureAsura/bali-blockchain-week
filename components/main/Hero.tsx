@@ -7,16 +7,24 @@ const Hero = () => {
     return (
         <div className='relative bg-black min-h-screen text-white overflow-hidden flex flex-col'>
 
-            <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 z-0 hidden md:block">
                 <FloatingLines
                     linesGradient={["#ff8800", "#ff0000", "#ff9500"]}
                     animationSpeed={1}
-                    interactive
+                    interactive={false}
                     bendRadius={5}
                     bendStrength={-0.5}
                     mouseDamping={0.05}
-                    parallax
+                    parallax={false}
                     parallaxStrength={0.2}
+                />
+            </div>
+
+            <div className="absolute inset-0 z-0 block md:hidden">
+                <img
+                    src="/hero.png"
+                    alt="Bali Blockchain Week"
+                    className="w-full h-full object-cover opacity-60"
                 />
             </div>
 
@@ -74,13 +82,7 @@ const Hero = () => {
                 </div>
             </main>
 
-            {/* <div className="relative z-20 bg-orange-400 py-6 shadow-[0_-10px_40px_rgba(255,115,0,0.3)]">
-                <ScrollVelocity
-                    texts={['BALI BLOCKCHAIN WEEK 2026 •']}
-                    velocity={60}
-                    className="text-black font-black text-3xl md:text-5xl uppercase tracking-tighter"
-                />
-            </div> */}
+
 
 
 

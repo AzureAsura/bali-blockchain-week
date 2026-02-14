@@ -1,8 +1,12 @@
 import React from 'react'
 import LogoLoop from '../LogoLoop'
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+} from "@/components/ui/carousel"
 
 const Sponsor = () => {
-
     const imageLogos = [
         { src: "https://cryptologos.cc/logos/thumbs/bitcoin.png?v=040", alt: "bitcoin" },
         { src: "https://cryptologos.cc/logos/thumbs/ethereum.png?v=040", alt: "eth" },
@@ -13,32 +17,64 @@ const Sponsor = () => {
     ];
 
     return (
-        <section className='py-24 relative overflow-hidden bg-black'>
-            
+        <section className='py-20 relative overflow-hidden bg-black'>
             <div className="absolute top-0 left-[-10%] w-[1000px] h-[500px] bg-orange-600/10 rounded-full blur-[120px] pointer-events-none z-0" />
-            
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[300px] bg-orange-500/5 rounded-full blur-[150px] pointer-events-none z-0" />
 
-            <div className='container relative z-10 mb-10'>
-                <h2 className='text-4xl md:text-5xl font-black text-white mb-4 uppercase tracking-tighter'>
+            <div className='container relative z-10 mb-5 md:mb-10'>
+                <h2 className='text-3xl md:text-5xl font-black text-white mb-4 uppercase tracking-tighter'>
                     OUR <span className='text-orange-500'>SPONSORS</span>
                 </h2>
             </div>
 
-            <div className='relative flex flex-col gap-3 z-10'>
+            <div className='block md:hidden space-y-3 px-4 relative z-10'>
+                <Carousel
+                    opts={{ align: "start", loop: true }}
+                    className="w-full"
+                >
+                    <CarouselContent className="-ml-4">
+                        {imageLogos.map((logo, index) => (
+                            <CarouselItem key={index} className="pl-4 basis-1/3">
+                                <div className="p-4 flex items-center justify-center bg-white/5 rounded-xl border border-white/10 aspect-square">
+                                    <img
+                                        src={logo.src}
+                                        alt={logo.alt}
+                                        className="w-12 h-12"
+                                    />
+                                </div>
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                </Carousel>
+                <Carousel
+                    opts={{ align: "start", loop: true }}
+                    className="w-full"
+                >
+                    <CarouselContent className="-ml-4">
+                        {imageLogos.map((logo, index) => (
+                            <CarouselItem key={index} className="pl-4 basis-1/3">
+                                <div className="p-4 flex items-center justify-center bg-white/5 rounded-xl border border-white/10 aspect-square">
+                                    <img
+                                        src={logo.src}
+                                        alt={logo.alt}
+                                        className="w-12 h-12"
+                                    />
+                                </div>
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                </Carousel>
+            </div>
 
-
+            <div className='relative hidden md:flex flex-col gap-3 z-10'>
                 <div className='border-y border-white/5 py-10 '>
                     <LogoLoop
                         logos={imageLogos}
                         speed={40}
                         direction="right"
-                        logoHeight={80} 
+                        logoHeight={80}
                         gap={120}
-                        className=""
                     />
                 </div>
-
                 <div className='border-y border-white/5 py-10'>
                     <LogoLoop
                         logos={imageLogos}
@@ -46,12 +82,9 @@ const Sponsor = () => {
                         direction="left"
                         logoHeight={80}
                         gap={150}
-                        className=""
                     />
                 </div>
             </div>
-
-            {/* Dekorasi Tambahan: Cahaya Oranye di pojok kanan bawah */}
         </section>
     )
 }
