@@ -17,7 +17,7 @@ const Sponsor = () => {
     ];
 
     return (
-        <section className='py-20 relative overflow-hidden bg-black'>
+        <section className='py-10 relative overflow-hidden bg-black'>
             <div className="absolute top-0 left-[-10%] w-[1000px] h-[500px] bg-orange-600/10 rounded-full blur-[120px] pointer-events-none z-0" />
 
             <div className='container relative z-10 mb-5 md:mb-10'>
@@ -26,7 +26,7 @@ const Sponsor = () => {
                 </h2>
             </div>
 
-            <div className='block md:hidden space-y-3 px-4 relative z-10'>
+            {/* <div className='block md:hidden space-y-3 px-4 relative z-10'>
                 <Carousel
                     opts={{ align: "start", loop: true }}
                     className="w-full"
@@ -63,9 +63,9 @@ const Sponsor = () => {
                         ))}
                     </CarouselContent>
                 </Carousel>
-            </div>
+            </div> */}
 
-            <div className='relative hidden md:flex flex-col gap-3 z-10'>
+            <div className='relative flex flex-col gap-2 z-10'>
                 <div className='border-y border-white/5 py-10 '>
                     <LogoLoop
                         logos={imageLogos}

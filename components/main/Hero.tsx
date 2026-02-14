@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <div className='relative bg-black min-h-screen text-white overflow-hidden flex flex-col'>
 
-            <div className="absolute inset-0 z-0 hidden md:block">
+            <div className="absolute inset-0 z-0 ">
                 <FloatingLines
                     linesGradient={["#ff8800", "#ff0000", "#ff9500"]}
                     animationSpeed={1}
@@ -20,13 +20,13 @@ const Hero = () => {
                 />
             </div>
 
-            <div className="absolute inset-0 z-0 block md:hidden">
+            {/* <div className="absolute inset-0 z-0 block md:hidden">
                 <img
                     src="/hero.png"
                     alt="Bali Blockchain Week"
                     className="w-full h-full object-cover opacity-60"
                 />
-            </div>
+            </div> */}
 
             <div className="absolute inset-0 z-10 backdrop-blur-xl bg-gradient-to-r from-black/80 via-black/40 to-transparent [mask-image:linear-gradient(to_right,black_0%,black_50%,transparent_100%)]">
             </div>

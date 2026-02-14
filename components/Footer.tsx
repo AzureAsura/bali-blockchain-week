@@ -23,7 +23,7 @@ const Footer = () => {
                     </p>
                 </div>
                 
-                <nav className="w-full md:w-auto">
+                {/* <nav className="w-full md:w-auto">
                     <ul className="grid grid-cols-2 gap-y-4 gap-x-8 md:flex md:flex-row md:gap-x-6">
                         {footerLinks.map(({ label, link }) => (
                             <li key={label} className="text-center md:text-left">
@@ -36,7 +36,7 @@ const Footer = () => {
                             </li>
                         ))}
                     </ul>
-                </nav>
+                </nav> */}
 
 
             </div>

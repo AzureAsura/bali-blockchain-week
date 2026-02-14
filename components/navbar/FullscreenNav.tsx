@@ -39,12 +39,12 @@ const FullscreenNav = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: any 
 
             <div className="absolute top-0 left-0 w-full p-6 flex justify-between items-end">
                 <div className="flex flex-col group cursor-default">
-                    <span className="text-[10px] md:text-xs tracking-[0.6em] uppercase text-orange-500 font-black mb-2 transition-all duration-500 group-hover:tracking-[0.8em] drop-shadow-[0_0_8px_rgba(249,115,22,0.4)]">
-                        Bali Blockchain
+                    <span className="text-[10px] md:text-xs tracking-[0.6em] uppercase text-white font-black mb-2 transition-all duration-500 group-hover:tracking-[0.8em] drop-shadow-[0_0_8px_rgba(249,115,22,0.4)]">
+                        Bali <span className='text-orange-500'>Blockchain</span>
                     </span>
 
                     <div className="relative overflow-hidden">
-                        <span className="text-xl md:text-2xl font-extralight tracking-[0.3em] uppercase text-white/90 leading-none block">
+                        <span className="text-xl md:text-2xl font-bold tracking-[0.3em] uppercase text-white/90 leading-none block">
                             Weeks <span className="font-bold text-white">2026</span>
                         </span>
                     </div>
@@ -68,7 +68,7 @@ const FullscreenNav = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: any 
                             <Link
                                 href={item.href}
                                 onClick={() => setIsOpen(false)}
-                                className="text-4xl font-light tracking-tighter hover:tracking-normal hover:text-orange-500 transition-all duration-500 uppercase flex items-center gap-4"
+                                className="text-4xl font-bold tracking-tighter hover:tracking-normal hover:text-orange-500 transition-all duration-500 uppercase flex items-center gap-4"
                             >
                                 {item.name}
                             </Link>
