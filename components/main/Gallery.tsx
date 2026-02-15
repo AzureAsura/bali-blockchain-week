@@ -2,16 +2,16 @@ import React from 'react'
 import Link from 'next/link'
 
 const items = [
-    { id: 1, title: 'Network Hub', image: 'https://images.unsplash.com/photo-1601132359864-c974e79890ac?q=80&w=2071&auto=format&fit=crop' },
-    { id: 2, title: 'AI Assistant', image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop' },
-    { id: 3, title: 'Cyber Operator', image: 'https://cdn.leonardo.ai/users/41962954-1852-4708-9646-1cb88be192a1/generations/0b1d14b4-9f9d-4cb9-af22-f2ef836663cb/segments/4:4:1/Lucid_Origin_Upper_body_only_Operator_rising_from_dense_smoke__3.jpg' },
-    { id: 4, title: 'Robotics', image: 'https://images.unsplash.com/photo-1625314887424-9f190599bd56?q=80&w=987&auto=format&fit=crop' },
-    { id: 5, title: 'Droid Unit', image: 'https://images.unsplash.com/photo-1589254065909-b7086229d08c?q=80&w=987&auto=format&fit=crop' },
-    { id: 6, title: 'Data Center', image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop' },
-    { id: 7, title: 'Hardware', image: 'https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1364&auto=format&fit=crop' },
-    { id: 8, title: 'Tech Interface', image: 'https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=1364&auto=format&fit=crop' },
-    { id: 9, title: 'Virtual Office', image: 'https://images.unsplash.com/photo-1580584126903-c17d41830450?q=80&w=1939&auto=format&fit=crop' },
-    { id: 10, title: 'Code Base', image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2069&auto=format&fit=crop' },
+    { id: 1, title: 'Dummy', image: 'https://images.unsplash.com/photo-1601132359864-c974e79890ac?q=80&w=2071&auto=format&fit=crop' },
+    { id: 2, title: 'Dummy', image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop' },
+    { id: 3, title: 'Dummy', image: 'https://cdn.leonardo.ai/users/41962954-1852-4708-9646-1cb88be192a1/generations/0b1d14b4-9f9d-4cb9-af22-f2ef836663cb/segments/4:4:1/Lucid_Origin_Upper_body_only_Operator_rising_from_dense_smoke__3.jpg' },
+    { id: 4, title: 'Dummy', image: 'https://images.unsplash.com/photo-1625314887424-9f190599bd56?q=80&w=987&auto=format&fit=crop' },
+    { id: 5, title: 'Dummy', image: 'https://images.unsplash.com/photo-1589254065909-b7086229d08c?q=80&w=987&auto=format&fit=crop' },
+    { id: 6, title: 'Dummy', image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop' },
+    { id: 7, title: 'Dummy', image: 'https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1364&auto=format&fit=crop' },
+    { id: 8, title: 'Dummy', image: 'https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=1364&auto=format&fit=crop' },
+    { id: 9, title: 'Dummy', image: 'https://images.unsplash.com/photo-1580584126903-c17d41830450?q=80&w=1939&auto=format&fit=crop' },
+    { id: 10, title: 'Dummy', image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2069&auto=format&fit=crop' },
 ];
 const Gallery = () => {
     return (
@@ -42,7 +42,7 @@ const Gallery = () => {
                                 <p className="text-orange-500 font-bold text-xs uppercase tracking-widest mb-1">
                                     #BBW2026
                                 </p>
-                                <h3 className="text-white font-bold text-lg uppercase italic">
+                                <h3 className="text-white font-bold text-lg uppercase">
                                     {item.title}
                                 </h3>
                             </div>

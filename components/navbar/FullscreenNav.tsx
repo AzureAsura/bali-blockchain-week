@@ -9,8 +9,8 @@ const menuItems = [
     { name: 'Speaker', href: '/' },
     { name: 'Partners', href: '/' },
     { name: 'Gallery', href: '/' },
-    { name: 'Tickets', href: '/' },
-    { name: 'FAQ', href: '/' },
+    // { name: 'Tickets', href: '/' },
+    // { name: 'FAQ', href: '/' },
 ]
 
 const FullscreenNav = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: any }) => {

@@ -1,5 +1,3 @@
-import React from 'react'
-import ScrollVelocity from '@/components/ScrollVelocity'
 import FloatingLines from '@/components/FloatingLines'
 import { ArrowRight, Calendar, MapPin } from 'lucide-react'
 
@@ -20,13 +18,6 @@ const Hero = () => {
                 />
             </div>
 
-            {/* <div className="absolute inset-0 z-0 block md:hidden">
-                <img
-                    src="/hero.png"
-                    alt="Bali Blockchain Week"
-                    className="w-full h-full object-cover opacity-60"
-                />
-            </div> */}
 
             <div className="absolute inset-0 z-10 backdrop-blur-xl bg-gradient-to-r from-black/80 via-black/40 to-transparent [mask-image:linear-gradient(to_right,black_0%,black_50%,transparent_100%)]">
             </div>
@@ -55,7 +46,7 @@ const Hero = () => {
                         </div>
                         <div>
                             <p className="text-[8px] md:text-[10px] uppercase tracking-wider text-gray-400 font-bold">Date</p>
-                            <p className="text-sm md:text-lg font-semibold leading-tight">Aug 19, 2026</p>
+                            <p className="text-sm md:text-lg font-semibold leading-tight">August, 2026</p>
                         </div>
                     </div>
 
@@ -81,10 +72,6 @@ const Hero = () => {
                     </button>
                 </div>
             </main>
-
-
-
-
 
         </div>
     )

@@ -52,7 +52,7 @@ const About = () => {
 
                         <div className="absolute w-[120%] h-[120%] bg-orange-600/20 rounded-full blur-[100px] animate-pulse pointer-events-none" />
 
-                        <div className='relative z-10 w-full aspect-square lg:aspect-auto lg:h-[500px] overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl shadow-orange-500/10 group'>
+                        <div className='relative z-10 w-full aspect-video lg:aspect-auto lg:h-[500px] overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl shadow-orange-500/10 group'>
                             <img
                                 src="https://coinfest.asia/_next/image?url=https%3A%2F%2Fwojgrioccmbywgtruwfl.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2FMedia%2520Folders%2FCoinfest%2520Asia%25202026%2Fhomepage-speakers%2Ftraders-card.png&w=1080&q=75"
                                 alt="Web3 Farm Ecosystem"
