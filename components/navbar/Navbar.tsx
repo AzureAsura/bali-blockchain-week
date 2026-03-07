@@ -1,7 +1,6 @@
 import Link from "next/link"
 import NavToggle from "./NavToggle"
-
-
+import Image from "next/image"
 
 const Navbar = () => {
   return (
@@ -11,7 +10,7 @@ const Navbar = () => {
 
           <div className='flex items-center'>
             <Link href={'/'}>
-              <img src="/logo.png" alt="logo" className='w-8' />
+              <Image src={'/logo.png'} alt="logo" width={32} height={32} priority />
             </Link>
           </div>
 

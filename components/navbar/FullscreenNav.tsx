@@ -64,7 +64,8 @@ const FullscreenNav = () => {
 
                 <div className="mt-10 gap-8 border-t border-white/5 pt-10">
                     <Link
-                        href="/tickets"
+                        href='https://x.com/BaliBlockchainW'
+                        target='_blank'
                         className="group relative inline-flex items-center justify-between bg-orange-500 text-black px-8 py-5 rounded-sm overflow-hidden transition-all duration-300 hover:bg-orange-600"
                     >
                         <span className="text-sm font-bold uppercase tracking-[0.2em] mr-12">CONTACT US</span>

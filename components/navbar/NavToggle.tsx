@@ -36,7 +36,8 @@ const NavToggle = () => {
         </ul>
 
         <Link
-          href={'/'}
+          href={'https://x.com/BaliBlockchainW'}
+          target='_blank'
           className='bg-orange-500 hover:bg-orange-600 text-black text-xs font-bold 
                              px-5 py-2.5 rounded-xl flex items-center gap-2 
                              transition-all duration-300 active:scale-95 shadow-lg shadow-orange-500/20'
