@@ -12,6 +12,7 @@ export const navLink = [
   { name: 'About', target: 'About' },
   { name: 'Gallery', target: 'Gallery' },
   { name: 'Partners', target: 'Partners' },
+  { name: 'FAQ', target: 'FAQ' },
 ]
 
 const NavToggle = () => {

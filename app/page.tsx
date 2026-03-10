@@ -7,6 +7,8 @@ import Sponsor from '@/components/main/Sponsor'
 import Footer from '@/components/Footer'
 import { ReactLenis } from '@/lib/lenis'
 import FullscreenNav from '@/components/navbar/FullscreenNav'
+import GetInvolved from '@/components/main/GetInvolved'
+import Faq from '@/components/main/Faq'
 
 
 const page = () => {
@@ -14,6 +16,7 @@ const page = () => {
 
   return (
     <ReactLenis root>
+
       <Navbar />
       <FullscreenNav/>
       <Hero />
@@ -21,7 +24,10 @@ const page = () => {
       <About/>
       <Gallery/>
       <Sponsor/>
+      <GetInvolved/>
+      <Faq/>
       <Footer/>
+
     </ReactLenis>
   )
 }

@@ -7,23 +7,9 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import { aboutFeatures } from '@/constants'
 
 const About = () => {
-    const features = [
-        {
-            title: "Talent & Workforce Acceleration",
-            desc: "From literacy campaigns to certified blockchain developer programs to building a ready-to-hire national talent pipeline"
-        },
-        {
-            title: "National Ecosystem Convergence",
-            desc: "A multi-sector platform uniting universities, startups,VCs, enterprises, regulators, and Web3 communities across Indonesia’s."
-        },
-        {
-            title: "Policy Alignment",
-            desc: "Closed-door roundtables and cross-sector MoUs shaping practical blockchain policy and real-world adoption."
-        }
-    ]
-
     return (
         <section className='relative py-10 bg-black overflow-hidden' id='About'>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-orange-600/10 rounded-full blur-[120px] pointer-events-none z-0" />
@@ -74,7 +60,7 @@ const About = () => {
                         className="w-full"
                     >
                         <CarouselContent className="-ml-4 flex md:grid md:grid-cols-3 md:gap-8 md:ml-0">
-                            {features.map((feature, index) => (
+                            {aboutFeatures.map((feature, index) => (
                                 <CarouselItem
                                     key={index}
                                     className="pl-4 basis-[85%] md:basis-full md:pl-0"

@@ -31,7 +31,7 @@ const Hero = () => {
                     </span>
                 </div>
 
-                <h1 className="text-[44px] sm:text-6xl md:text-8xl font-black md:font-bold leading-none tracking-[-0.03em] mb-4 md:mb-6">
+                <h1 className="text-[40px] sm:text-6xl md:text-8xl font-black md:font-bold leading-[0.95] tracking-tighter md:leading-none mb-4 md:mb-6 uppercase">
                     Bali <span className="text-orange-400">Blockchain</span> <br className="hidden sm:block" />
                     Weeks 2026
                 </h1>
