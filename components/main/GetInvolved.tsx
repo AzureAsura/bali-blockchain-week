@@ -7,7 +7,7 @@ const GetInvolvedElegan = () => {
         <section className="bg-black py-10">
             <div className="container">
 
-                <h2 className='text-3xl md:text-5xl font-black text-white mb-12 uppercase tracking-tighter'>
+                <h2 className='text-4xl md:text-5xl font-black text-white mb-12 uppercase tracking-tighter'>
                     GET <span className='text-orange-500'>INVOLVED</span>
                 </h2>
 
