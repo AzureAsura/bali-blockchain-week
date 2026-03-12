@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { getInvolvedCard } from '@/constants';
+import Link from 'next/link';
 
 const GetInvolvedElegan = () => {
     return (
@@ -11,7 +12,7 @@ const GetInvolvedElegan = () => {
                     GET <span className='text-orange-500'>INVOLVED</span>
                 </h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {getInvolvedCard.map((item, index) => (
                         <div
                             key={index}
@@ -38,9 +39,9 @@ const GetInvolvedElegan = () => {
                                     </p>
                                 </div>
 
-                                <button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3.5 px-4 rounded-xl transition-colors duration-300 text-sm md:text-base flex items-center justify-center gap-2 group-hover:gap-3 cursor-pointer">
+                                <Link href={item.href} className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3.5 px-4 rounded-xl transition-colors duration-300 text-sm md:text-base flex items-center justify-center gap-2 group-hover:gap-3 cursor-pointer">
                                     {item.buttonText}
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     ))}

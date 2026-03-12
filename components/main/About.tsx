@@ -41,7 +41,7 @@ const About = () => {
 
                         <div className='relative z-10 w-full aspect-video lg:aspect-auto lg:h-[450px] overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl shadow-orange-500/10 group'>
                             <img
-                                src="/gallery/img5.jpg"
+                                src="/gallery/img5.webp"
                                 alt="Web3 Farm Ecosystem"
                                 className='w-full h-full object-cover'
                             />

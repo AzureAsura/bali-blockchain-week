@@ -16,7 +16,7 @@ export const aboutFeatures = [
 export const galleryItems = Array.from({ length: 23 }, (_, i) => ({
     id: i + 1,
     title: 'Dummy',
-    image: `/gallery/img${i + 1}.jpg`,
+    image: `/gallery/img${i + 1}.webp`,
 }));
 
 export const getInvolvedCard = [
@@ -24,26 +24,29 @@ export const getInvolvedCard = [
         title: "JOIN AS AN ATTENDEE",
         description: "Network with industry leaders and gain exclusive global insights.",
         buttonText: "Get Tickets",
+        href: '#',
         image: 'https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?q=80&w=600&auto=format&fit=crop',
     },
     {
         title: "BECOME A SPONSOR",
         description: "Scale your brand visibility and connect with a premium audience.",
         buttonText: "Request Prospectus",
+        href: '/sponsorship',
         image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=600&auto=format&fit=crop",
     },
     {
         title: "PARTNER AS MEDIA",
         description: "Access exclusive press materials and cover groundbreaking news.",
         buttonText: "Apply Now",
+        href: '/media',
         image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600&auto=format&fit=crop",
     },
-    {
-        title: "BECOME AN AFFILIATE",
-        description: "Promote the world's top event and earn high-tier commissions.",
-        buttonText: "Join Now",
-        image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=600&auto=format&fit=crop"
-    },
+    // {
+    //     title: "BECOME AN AFFILIATE",
+    //     description: "Promote the world's top event and earn high-tier commissions.",
+    //     buttonText: "Join Now",
+    //     image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=600&auto=format&fit=crop"
+    // },
 ];
 
 

@@ -4,11 +4,12 @@ import {
     CarouselContent,
     CarouselItem,
 } from "@/components/ui/carousel"
+import Image from 'next/image';
 
 const speakersData = Array.from({ length: 8 }, (_, i) => ({
     name: `Speaker ${i + 1}`,
     role: "Co-Founder & CEO",
-    image: 'speakers.png'
+    image: '/cz.webp'
 }));
 
 
@@ -26,20 +27,17 @@ const Speakers = () => {
                         <div key={index} className='relative group overflow-hidden rounded-3xl border bg-[#111] aspect-[3/4] transition-all duration-500 border-orange-500/50'>
 
                             <div className='absolute inset-0 z-0 flex items-end justify-center'>
-                                {/* <img
+                                <Image
                                     src={speaker.image}
-                                    className='w-full h-[80%] object-contain object-bottom group-hover:scale-105 transition-all duration-700  grayscale brightness-0 contrast-125 '
-                                    alt={speaker.name}
-                                /> */}
-                                <img
-                                    src={speaker.image}
+                                    width={300}
+                                    height={400}
                                     className='w-full h-[80%] object-contain object-bottom group-hover:scale-105 transition-all duration-700 pt-4'
                                     alt={speaker.name}
+                                    priority
                                 />
                             </div>
-
                             <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
-                                <div className="rounded-full bg-white absolute w-40 h-40 blur-[80px] opacity-20 " />
+                                <div className="rounded-full bg-white absolute w-40 h-40 blur-[80px] opacity-20 will-change-auto" />
                             </div>
 
                             <div className='relative z-20 flex flex-col items-center pt-8 px-4 text-center'>
@@ -78,10 +76,13 @@ const Speakers = () => {
                                 <div className='relative group overflow-hidden rounded-3xl border bg-[#111] aspect-[3/4] transition-all duration-500 border-orange-500/50 h-full'>
 
                                     <div className='absolute inset-0 z-0 flex items-end justify-center'>
-                                        <img
+                                        <Image
                                             src={speaker.image}
+                                            width={300}
+                                            height={400}
                                             className='w-full h-[80%] object-contain object-bottom group-hover:scale-105 transition-all duration-700 pt-4'
                                             alt={speaker.name}
+                                            loading='lazy'
                                         />
                                     </div>
 

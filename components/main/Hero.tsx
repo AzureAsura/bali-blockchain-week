@@ -1,27 +1,27 @@
 import { ArrowRight, Calendar, MapPin } from 'lucide-react'
 import Link from 'next/link'
 import ComunitiesButton from '../ComunitiesButton'
-import FloatingLines from '../FloatingLines'
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 const Hero = () => {
 
     return (
-        <div className='relative bg-black min-h-screen text-white overflow-hidden flex flex-col'>
+        <div className='relative bg-black min-h-screen text-white overflow-hidden flex flex-col will-change-transform'>
 
             <div className="absolute inset-0 z-0">
-                <FloatingLines
-                    linesGradient={["#ff8800", "#ff0000", "#ff9500"]}
-                    animationSpeed={0.3}
-                    interactive={false}
-                    bendRadius={5}
-                    bendStrength={-0.5}
-                    mouseDamping={0.05}
-                    parallax={false}
-                    parallaxStrength={0.2}
-                />
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="absolute w-full h-full object-cover inset-0 pointer-events-none"
+                    poster="/hero-placeholder.png"
+                >
+                    <source src="/hero.webm" type="video/webm" />
+                </video>
             </div>
 
-            <div className="absolute inset-0 z-10 backdrop-blur-xl bg-gradient-to-r from-black/80 via-black/40 to-transparent [mask-image:linear-gradient(to_right,black_0%,black_50%,transparent_100%)]">
+            <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/90 via-black/40 to-transparent [mask-image:linear-gradient(to_right,black_0%,black_50%,transparent_100%)]">
             </div>
 
             <main className="relative z-10 min-h-screen flex flex-col justify-center w-full container lg:py-32">
@@ -31,7 +31,7 @@ const Hero = () => {
                     </span>
                 </div>
 
-                <h1 className="text-[44px] sm:text-6xl md:text-8xl font-black md:font-bold leading-[0.8] sm:leading-[0.85] md:leading-[0.9] tracking-tighter mb-4 md:mb-6 uppercase max-w-none">
+                <h1 className="text-[44px] sm:text-6xl md:text-8xl font-black md:font-bold leading-[0.8] sm:leading-[0.85] md:leading-[0.8] tracking-tighter mb-4 md:mb-6 uppercase max-w-none">
                     <span className="block">Bali</span>
                     <span className="block">Blockchain</span>
                     <p className="block">Weeks <span className='text-orange-500'>2026</span></p>
@@ -78,9 +78,3 @@ const Hero = () => {
 }
 
 export default Hero
-
-{/* <img
-                                    src={speaker.image}
-                                    className='w-full h-[80%] object-contain object-bottom group-hover:scale-105 transition-all duration-700  grayscale brightness-0 contrast-125 '
-                                    alt={speaker.name}
-                                /> */}

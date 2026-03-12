@@ -154,4 +154,8 @@
     border-color: #f97316;
     box-shadow: 0 0 20px rgba(249, 115, 22, 0.15);
   }
+
+  .input-landing {
+    @apply bg-zinc-900 border-zinc-800 focus:border-orange-500 transition-colors h-12
+  }
 }
