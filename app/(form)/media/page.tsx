@@ -1,4 +1,9 @@
 import MediaForm from "@/components/form/MediaForm";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Media"
+};
 
 
 const page = () => {

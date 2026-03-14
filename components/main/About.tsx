@@ -1,5 +1,4 @@
-import React from 'react'
-import { aboutFeatures } from '@/constants'
+import { aboutFeatures } from "@/constants"
 import {
     Carousel,
     CarouselContent,
@@ -23,7 +22,7 @@ const About = () => {
                         />
                     </div>
 
-                    <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6 md:p-12'>
+                    <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4 md:p-8'>
                         <h2 className=' text-[20px] md:text-[50px] font-black leading-none tracking-tight uppercase'>
                             Bali Blockchain Weeks <span className='text-orange-600'>2026</span>
                         </h2>
@@ -36,7 +35,7 @@ const About = () => {
                     </p>
                 </div>
 
-                {/* <div className='w-full mt-12 md:mt-24 pt-12 border-t border-white/5'>
+                <div className='w-full mt-10 pt-8 md:mt-16 md:pt-12 border-t border-white/5'>
                     <Carousel
                         opts={{
                             align: "start",
@@ -44,21 +43,19 @@ const About = () => {
                         }}
                         className="w-full"
                     >
-
-                        <CarouselContent className="-ml-4 md:-ml-8">
+                        <CarouselContent className="-ml-4">
                             {aboutFeatures.map((feature, index) => (
-                                <CarouselItem
-                                    key={index}
+                                <CarouselItem key={index} className="pl-4 md:basis-1/3">
+                                    <div className='relative group p-6 rounded-2xl border border-orange-600/40 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300 h-full'>
 
-                                    className="pl-4 md:pl-8 basis-[85%] md:basis-1/3"
-                                >
-                                    <div className='flex gap-4 items-start h-full'>
-                                        <div className='h-2 w-2 rounded-full bg-orange-500 mt-2 shrink-0 animate-pulse shadow-[0_0_8px_rgba(249,115,22,0.6)]' />
-                                        <div className="space-y-1">
-                                            <h4 className='font-bold text-xl md:text-2xl text-white uppercase tracking-tight leading-7'>
+                                        <div className='absolute -inset-px bg-gradient-to-br from-orange-600/20 to-transparent  rounded-2xl transition-opacity duration-500' />
+
+                                        <div className='relative z-10'>
+                                            <h4 className='font-black text-xl md:text-2xl text-white uppercase tracking-tighter leading-tight mb-3'>
                                                 {feature.title}
                                             </h4>
-                                            <p className='text-sm text-gray-500 leading-relaxed font-manrope'>
+
+                                            <p className='text-sm text-gray-500 leading-relaxed font-medium tracking-tight'>
                                                 {feature.desc}
                                             </p>
                                         </div>
@@ -67,7 +64,7 @@ const About = () => {
                             ))}
                         </CarouselContent>
                     </Carousel>
-                </div> */}
+                </div>
             </div>
         </section>
     )

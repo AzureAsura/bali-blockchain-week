@@ -1,5 +1,10 @@
 
 import SponsorForm from "@/components/form/SponsorForm";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sponsorship"
+};
 
 const page = () => {
   return (

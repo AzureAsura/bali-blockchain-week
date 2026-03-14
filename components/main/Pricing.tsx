@@ -9,7 +9,7 @@ import Link from 'next/link'
 const Pricing = () => {
 
     return (
-        <section className='py-10'>
+        <section className='py-10' id='Pricing'>
 
 
             <div className="max-w-6xl mx-auto px-4">

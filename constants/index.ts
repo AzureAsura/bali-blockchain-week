@@ -21,15 +21,6 @@ export const galleryItems = Array.from({ length: 23 }, (_, i) => ({
 
 export const getInvolvedCard = [
     {
-        id: 1,
-        title: "JOIN AS AN ATTENDEE",
-        description: "Network with industry leaders and gain exclusive global insights.",
-        image: "/gallery/img2.webp",
-        className: "md:col-span-2 md:row-span-2",
-        href: '#',
-
-    },
-    {
         id: 2,
         title: "Become A Sponsor",
         description: "Scale your brand visibility with a premium audience.",
