@@ -33,7 +33,7 @@ export const sponsorFunction = async (prevState: any, formData: FormData) => {
 
         const { data, error } = await resend.emails.send({
             from: 'Bali Blockchain Weeks <onboarding@resend.dev>',
-            to: ['paramasuraqutay@gmail.com'],
+            to: ['info@baliblockchainweeks.com'],
             subject: `Sponsorship Inquiry: ${validatedData.data.company}`,
             html: `
                 <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #1a1a1a; max-width: 1000px; margin: 0 auto; border: 1px solid #f0f0f0; padding: 24px; border-radius: 12px;">
@@ -90,6 +90,8 @@ export const sponsorFunction = async (prevState: any, formData: FormData) => {
             }
         }
 
+       
+
         return {
             success: true,
             message: "Thank you! Our team will get back to you shortly."
@@ -141,7 +143,7 @@ export const mediaFunction = async (prevState: any, formData: FormData) => {
 
         const { data, error } = await resend.emails.send({
             from: 'Bali Blockchain Weeks <onboarding@resend.dev>',
-            to: ['paramasuraqutay@gmail.com'],
+            to: ['info@baliblockchainweeks.com'],
             subject: `Media Partner Request: ${validatedData.data.outletName}`,
             html: `
                 <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #1a1a1a; max-width: 1000px; margin: 0 auto; border: 1px solid #f0f0f0; padding: 24px; border-radius: 12px;">
