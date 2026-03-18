@@ -56,38 +56,38 @@ export const faqData = [
     {
         category: "General",
         questions: [
-            { q: "What is Bali Blockchain Weeks?", a: "Bali Blockchain Weeks is a premium series of events, workshops, and networking sessions bringing together global Web3 innovators to the heart of Indonesia." },
-            { q: "When and where will the event take place?", a: "The main event is scheduled for 2026, held across various premium venues in South Denpasar, Bali." },
-            { q: "Is the event open for beginners?", a: "Absolutely. While we host technical sessions, there are plenty of introductory tracks and networking opportunities for those new to the space." },
+            { q: "What is Bali Blockchain Weeks?", a: "Bali Blockchain Weeks 2026 is a multi-pillar program aimed at strengthening blockchain adoption in Indonesia and positioning the country as the Web3 Hub of Southeast Asia" },
+            { q: "When will the event take place?", a: "The main event takes place on May 9, 2026" },
+            { q: "Is the event open for beginners?", a: "Absolutely. It brings together students, developers, professionals, government regulators, and enterprise leaders" },
+            { q: "What is the overall impact target for Bali Blockchain Weeks", a: "The program aims to drastically build the local ecosystem by producing over 1,500 ready-to-hire certified developers and incubating 50+ new startups." },
         ]
     },
     {
         category: "Tickets",
         questions: [
-            { q: "How can I purchase tickets?", a: "Tickets can be purchased directly through our official website using both fiat and selected cryptocurrencies." },
-            { q: "Are there Early Bird discounts?", a: "Yes, we offer limited Early Bird tickets. Follow our social media to get the announcement as soon as they drop." },
-            { q: "Can I upgrade my ticket later?", a: "Ticket upgrades are possible depending on availability. Please reach out to our support team for assistance." },
+            { q: "How can I purchase tickets?", a: "Tickets can be purchased directly through our website in ticketing section" },
+            { q: "What types of tickets are available?", a: "standard Conference Passes and VIP Networking Passes." },
         ]
     },
     {
         category: "Sponsorship & Marketing",
         questions: [
-            { q: "How can my brand get featured?", a: "We offer various tiers of sponsorship from booth placements to speaking slots. Request our prospectus through the 'Get Involved' section." },
-            { q: "Are there custom marketing packages?", a: "Yes, our team can tailor a package that fits your specific brand goals and target audience during the event." },
+            { q: "Do sponsors get speaking opportunities?", a: "Yes, all tiers include main stage speaking slots. The Co-Host package includes 2 Keynote slots, 2 Panel Discussion slots, and a priority speaking role during the Opening Ceremony." },
+            { q: "Are there custom marketing packages?", a: "Yes, our team can tailor a package that fits your specific brand goals and target audience during the event" },
         ]
     },
     {
         category: "Program & Agenda",
         questions: [
-            { q: "What topics will be covered?", a: "The agenda focuses on DeFi, Infrastructure, RWA (Real World Assets), and the future of the Web3 ecosystem in Southeast Asia." },
-            { q: "When will the full speaker lineup be announced?", a: "We announce speakers in phases. The full agenda will be finalized and published one month before the event." },
+            { q: "What are the main pillars of the Bali Blockchain Weeks program?", a: "The program is built on three integrated pillars: Literacy (a National Campus Roadshow), Training (a Developer & Workforce Program), and the culminating National Conference." },
+            { q: "What will the technical training track cover for developers?", a: "The technical track focuses heavily on dApp development—including full-stack decentralized application building using Solidity/Rust, Web3.js integration, and frontend connectivity—alongside smart contract security topics like auditing basics and secure coding standards." },
         ]
     },
     {
         category: "Partnerships",
         questions: [
             { q: "How do I apply as a Community Partner?", a: "We love collaborating with local and global communities. Fill out the partnership form on our website to get started." },
-            { q: "What are the benefits of being a Media Partner?", a: "Media partners receive exclusive press access, interview opportunities with keynote speakers, and VIP lounge access." },
+            { q: "Are there opportunities to partner with local educational institutions?", a: "Yes, the National Campus Roadshow pillar is specifically designed to partner with 10+ campuses across the region to deliver literacy seminars, socialize policy, and map potential developer talent" },
         ]
     }
 ];

@@ -218,7 +218,7 @@ function OverlayContent({ scrollYProgress }: { scrollYProgress: any }) {
                     Bali Blokchain Weeks
                 </h1>
                 <p className="text-xl tracking-[0.5em] mt-4 uppercase">
-                    Mid 2025
+                    May 9, 2025
                 </p>
             </motion.div>
 
@@ -236,9 +236,9 @@ function OverlayContent({ scrollYProgress }: { scrollYProgress: any }) {
                 className="absolute left-[10%] w-[40%] text-left hidden md:block"
             >
                 <h2 className="text-[5vw] tracking-tighter leading-none uppercase font-bold">
-                    BEYOND
+                    MASS
                     <br />
-                    BOUNDARIES
+                    ADOPTION
                 </h2>
             </motion.div>
 
