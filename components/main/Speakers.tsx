@@ -7,10 +7,10 @@ import {
 import Image from 'next/image';
 import SpeakerSlider from '../SpeakerSlider';
 
-const speakersData = Array.from({ length: 8 }, (_, i) => ({
-    name: `Speaker ${i + 1}`,
-    role: "Co-Founder & CEO",
-    image: '/cz.webp'
+const speakersData = Array.from({ length: 1 }, (_, i) => ({
+    name: `GreenMan-Ron ${i + 1}`,
+    role: "Community Manager & Educator Lead BlockDevId",
+    image: `/speakers/speaker${i + 1}.webp`
 }));
 
 

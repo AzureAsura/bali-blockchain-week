@@ -105,10 +105,17 @@ const MediaForm = () => {
                         <SelectValue placeholder="Select position..." />
                     </SelectTrigger>
                     <SelectContent className="bg-zinc-900 border-zinc-800 text-white">
-                        <SelectItem value="editor">Editor</SelectItem>
-                        <SelectItem value="journalist">Journalist</SelectItem>
-                        <SelectItem value="marketing">Marketing</SelectItem>
-                        <SelectItem value="vp">VP / C-Level</SelectItem>
+                      <SelectItem value="Founder / C-level">Founder / C-level</SelectItem>
+                        <SelectItem value="Corporate Executive">Corporate Executive (Business development / Marketing / Event / Agency)</SelectItem>
+                        <SelectItem value="Developers">Developers / Software Engineer / Products</SelectItem>
+                        <SelectItem value="Fund Manager">Fund Manager / Analyst</SelectItem>
+                        <SelectItem value="Trader">Financial Advisor / Trader</SelectItem>
+                        <SelectItem value="Creator">Artist / Creator</SelectItem>
+                        <SelectItem value="Government Officials">Government Officials / Policy Makers</SelectItem>
+                        <SelectItem value="Human Resources Department">Human Resources Department</SelectItem>
+                        <SelectItem value="Journalist">Reporter / Journalist / Writer</SelectItem>
+                        <SelectItem value="Student">Student</SelectItem>
+                        <SelectItem value="Others">Others</SelectItem>
                     </SelectContent>
                 </Select>
                 {state?.error?.position && (

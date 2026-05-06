@@ -11,7 +11,7 @@ const page = () => {
     <div className="min-h-screen bg-black text-white relative">
       <div className="w-full h-[200px] md:h-[400px] overflow-hidden absolute">
         <img
-          src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?q=80&w=2070&auto=format&fit=crop"
+          src="gallery/img3.webp"
           alt="Image"
           className="object-cover w-full h-full opacity-70 relative"
         />

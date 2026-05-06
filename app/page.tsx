@@ -12,6 +12,7 @@ import GetInvolved from '@/components/main/GetInvolved'
 import Pricing from '@/components/main/Pricing'
 import Footer from '@/components/Footer'
 import FullscreenNav from '@/components/navbar/FullscreenNav'
+import Preloader from '@/components/Proloader'
 
 
 
@@ -24,6 +25,8 @@ const page = () => {
       <main className="bg-black min-h-screen">
         <Navbar />
         <FullscreenNav/>
+
+        <Preloader/>
 
         <Hero />
 
