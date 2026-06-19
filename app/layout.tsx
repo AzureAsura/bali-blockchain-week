@@ -25,6 +25,12 @@ export const metadata: Metadata = {
     template: "%s | Bali Blockchain Weeks"
   },
   description: "Join the most influential Web3 & Crypto event in Bali. Experience high-level networking, exclusive industry insights, and the future of blockchain technology in Southeast Asia.",
+  
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/icon.png",
+  },
+
   keywords: [
     "Bali Blockchain Weeks",
     "Bali Blockchain Week",
