@@ -27,7 +27,10 @@ export const metadata: Metadata = {
   description: "Join the most influential Web3 & Crypto event in Bali. Experience high-level networking, exclusive industry insights, and the future of blockchain technology in Southeast Asia.",
   
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icon.png", type: "image/png" }
+    ],
     apple: "/icon.png",
   },
 
