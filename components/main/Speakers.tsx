@@ -7,66 +7,58 @@ import {
 import Image from 'next/image';
 import SpeakerSlider from '../SpeakerSlider';
 
-const speakersData = Array.from({ length: 8 }, (_, i) => ({
-    name: `Speaker ${i + 1}`,
-    role: "Co-Founder & CEO",
-    image: '/cz.webp'
-}));
+const speakersData = [
+    {
+    name: "Coming Soon",
+    role: "Web 3 & Crypto Speaker",
+    image: "/speakers/quest.png",
+  }
+];
 
 
 
 const Speakers = () => {
     return (
         <div className='py-10 md:py-20' id='Speakers'>
-            <div className='container'>
-                <h2 className='text-[33px] md:text-5xl font-black text-white mb-12 leading-8 uppercase tracking-tighter'>
+            <div className='container mx-auto px-4'>
+
+                <h2 className='text-[33px] md:text-5xl font-black text-white mb-12 leading-8 uppercase tracking-tighter text-center'>
                     upcoming <span className='text-orange-500'>SPEAKERS</span>
                 </h2>
 
-                <div className='grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 hidden md:grid'>
+                <div className='flex flex-wrap justify-center gap-6 md:gap-8 hidden md:flex'>
                     {speakersData.map((speaker, index) => (
-                        <div key={index} className='relative group overflow-hidden rounded-3xl border bg-[#111] aspect-[3/4] transition-all duration-500 border-orange-500/50'>
-
-                            <div className='absolute inset-0 z-0 flex items-end justify-center'>
+                        <div
+                            key={index}
+                            className='flex flex-col gap-3 group cursor-pointer transition-all duration-300 w-full md:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)] max-w-[350px]'
+                        >
+                            <div className='relative overflow-hidden rounded-xl border-[1.5px] border-orange-500 bg-white aspect-[4/5] flex items-center justify-center'>
                                 <Image
                                     src={speaker.image}
-                                    width={300}
-                                    height={400}
-                                    className='w-full h-[80%] object-contain object-bottom group-hover:scale-105 transition-all duration-700 pt-4'
+                                    width={400}
+                                    height={450}
+                                    className='w-full h-full object-cover transition-transform duration-500 '
                                     alt={speaker.name}
-                                    priority
+                                    priority={index < 4}
                                 />
                             </div>
-                            <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
-                                <div className="rounded-full bg-white absolute w-40 h-40 blur-[80px] opacity-20 will-change-auto" />
-                            </div>
 
-                            <div className='relative z-20 flex flex-col items-center pt-8 px-4 text-center'>
-                                <h3 className='text-white font-bold text-2xl drop-shadow-md'>
+                            <div className='rounded-xl bg-orange-500 px-4 py-4 text-left shadow-md min-h-[110px] flex flex-col justify-center'>
+                                <h3 className='text-white font-bold text-lg lg:text-xl leading-tight mb-1 tracking-tight uppercase'>
                                     {speaker.name}
                                 </h3>
-                                <p className='text-gray-400 text-[10px] font-bold uppercase tracking-[0.2em]'>
+                                <p className='text-white/90 text-xs md:text-sm font-medium leading-snug line-clamp-2'>
                                     {speaker.role}
                                 </p>
                             </div>
-
-
-                            <div className='absolute inset-0 z-0 bg-gradient-to-b from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500' />
-
-
-                            <div className='absolute bottom-0 left-0 w-full h-[4px] z-40 bg-gradient-to-r from-transparent via-orange-500 to-transparent scale-x-100 transition-transform duration-500 ease-out' />
-
                         </div>
                     ))}
                 </div>
 
-                <SpeakerSlider/>
-
-
+                <SpeakerSlider />
 
             </div>
         </div>
-
 
 
     )

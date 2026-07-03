@@ -27,13 +27,13 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-end">
           <h2 className="text-3xl font-black uppercase tracking-tighter mb-4">Socials</h2>
           <div className="flex flex-wrap justify-center md:justify-end gap-6 text-base text-neutral-400 font-manrope">
-            <Link href="https://www.instagram.com/baliblockchainw/" target="_blank" className="hover:text-white transition-colors">
+            <Link href="https://www.instagram.com/bbweekofficial" target="_blank" className="hover:text-white transition-colors">
               Instagram
             </Link>
-            <Link href="https://x.com/BaliBlockchainW" target="_blank" className="hover:text-white transition-colors">
+            <Link href="https://x.com/BBweekOfficial" target="_blank" className="hover:text-white transition-colors">
               X / Twitter
             </Link>
-            <Link href="https://t.me/BaliBlockchainW" target="_blank" className="hover:text-white transition-colors">
+            <Link href="https://t.me/bbweekofficial" target="_blank" className="hover:text-white transition-colors">
               Telegram
             </Link>
           </div>

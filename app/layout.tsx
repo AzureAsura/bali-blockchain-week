@@ -25,6 +25,15 @@ export const metadata: Metadata = {
     template: "%s | Bali Blockchain Weeks"
   },
   description: "Join the most influential Web3 & Crypto event in Bali. Experience high-level networking, exclusive industry insights, and the future of blockchain technology in Southeast Asia.",
+  
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icon.png", type: "image/png" }
+    ],
+    apple: "/icon.png",
+  },
+
   keywords: [
     "Bali Blockchain Weeks",
     "Bali Blockchain Week",
@@ -52,9 +61,6 @@ export const metadata: Metadata = {
     ],
     locale: "en_US",
     type: "website",
-  },
-  icons: {
-    icon: "/favicon.ico",
   },
   twitter: {
     card: "summary_large_image",

@@ -42,7 +42,7 @@ export default function Preloader() {
                         >
                             <img src="/logo.png" alt="logo" className="size-8 object-contain" />
                             <span className="text-sm font-sans font-semibold tracking-[0.3em] uppercase text-white/80">
-                                Bali Blockchain Week
+                                Bali Blockchain Weeks
                             </span>
                         </motion.div>
                        

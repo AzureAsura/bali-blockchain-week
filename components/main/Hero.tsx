@@ -12,7 +12,7 @@ const preloadImages = () => {
     for (let i = 15; i <= frameCount; i++) {
         const img = new Image();
         const formattedIndex = i.toString().padStart(3, "0");
-        img.src = `/sequence/ezgif-frame-${formattedIndex}.jpg`;
+        img.src = `/sequence/ezgif-frame-${formattedIndex}.webp`;
         images.push(img);
     }
 };
@@ -137,7 +137,7 @@ function OverlayContent({ scrollYProgress }: { scrollYProgress: any }) {
                     Bali Blokchain Weeks
                 </h1>
                 <p className="text-xl tracking-[0.5em] mt-4 uppercase">
-                    May 9, 2026
+                    19 August, 2026
                 </p>
             </motion.div>
 
