@@ -6,52 +6,53 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 
-
-const speakersData = Array.from({ length: 8 }, (_, i) => ({
-    name: `Speaker ${i + 1}`,
-    role: "Co-Founder & CEO",
-    image: '/cz.webp'
-}));
+const speakersData = [
+  {
+    name: "Coming Soon",
+    role: "Web 3 & Crypto Speaker",
+    image: "/speakers/quest.png",
+  }
+];
 
 export default function SpeakerSlider() {
   return (
     <section className="bg-black relative z-10 overflow-hidden md:hidden">
       <Swiper
-        effect={"coverflow"}
+
+        slidesPerView={1.1} 
+        spaceBetween={25}  
+        centeredSlides={false} 
         grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 25,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: false, 
+        speed={600}
+        freeMode={true}
+        modules={[Autoplay]}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
         }}
-        speed={800}
-        modules={[EffectCoverflow, Autoplay]}
-        className="w-full py-10"
+        className="w-full px-4 py-10" 
       >
         {speakersData.map((item, i) => (
           <SwiperSlide
             key={i}
-            className="max-w-[320px] w-full bg-neutral-900/50 backdrop-blur-sm rounded-xl overflow-hidden shadow-2xl border border-white/10 group"
+            className="w-full group" 
           >
-            <div className="aspect-3/4 relative flex flex-col items-center justify-end p-6 text-center">
-              <Image
-                src={item.image}
-                alt={item.name}
-                fill
-                className="object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-              />
+            <div className="flex flex-col gap-3">
 
-              <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent"></div>
+              <div className="relative overflow-hidden rounded-xl border-[1.5px] border-orange-500 bg-white aspect-[4/5]">
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
 
-              <div className="relative z-10 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                <h3 className="text-4xl font-bold tracking-tight text-white">
+              <div className="rounded-xl bg-orange-500 px-4 py-4 text-left shadow-lg min-h-[100px] flex flex-col justify-center">
+                <h3 className="text-white font-bold text-lg leading-tight mb-1 uppercase tracking-tight">
                   {item.name}
                 </h3>
-                <p className="text-orange-600 tracking-widest">
+                <p className="text-white/90 text-xs font-medium leading-snug line-clamp-2">
                   {item.role}
                 </p>
               </div>
@@ -59,7 +60,6 @@ export default function SpeakerSlider() {
           </SwiperSlide>
         ))}
       </Swiper>
-      
     </section>
   );
 }
