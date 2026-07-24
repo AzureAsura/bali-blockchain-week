@@ -43,13 +43,13 @@ const Pricing = () => {
                             </div>
                             <div className='flex relative z-[2] items-center justify-center'>
                                 <div className='font-inter text-[72px] font-bold leading-[84px] text-white'>
-                                    FREE
+                                    SOON
                                 </div>
                             </div>
                         </div>
 
                         <div className='text-[22px] leading-[36px] font-medium relative z-[2] mb-10  text-center text-p4'>
-                            Maximum exclusivity
+                            Limited Seat
                         </div>
 
                         <ul className='mx-auto space-y-4 xl:px-7 flex-1'>
@@ -73,7 +73,7 @@ const Pricing = () => {
                         </ul>
 
                         <div className='mt-10 flex w-full justify-center'>
-                            <Link href={'https://luma.com/cj17xgai'} className='px-8 py-4 text-lg bg-orange-500 rounded-2xl font-black uppercase tracking-tight hover:bg-orange-600 hover:-translate-y-1 transition-all duration-300 cursor-pointer'>
+                            <Link href={''} className='px-8 py-4 text-lg bg-orange-500 rounded-2xl font-black uppercase tracking-tight hover:bg-orange-600 hover:-translate-y-1 transition-all duration-300 cursor-pointer'>
                                 Buy Tickets
                             </Link>
                         </div>
