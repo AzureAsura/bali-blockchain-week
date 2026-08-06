@@ -45,10 +45,10 @@ const About = () => {
                     >
                         <CarouselContent className="-ml-4">
                             {aboutFeatures.map((feature, index) => (
-                                <CarouselItem key={index} className="pl-4 md:basis-1/3">
-                                    <div className='relative group p-6 rounded-2xl border border-orange-600/40 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300 h-full'>
+                                <CarouselItem key={index} className="pl-4 basis-[85%] md:basis-1/3">
+                                    <div className='relative group p-6 rounded-2xl border border-gray-600 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300 h-full'>
 
-                                        <div className='absolute -inset-px bg-gradient-to-br from-orange-600/20 to-transparent  rounded-2xl transition-opacity duration-500' />
+                                        <div className='absolute -inset-px bg-gradient-to-br from-white/10 to-transparent  rounded-2xl transition-opacity duration-500' />
 
                                         <div className='relative z-10'>
                                             <h4 className='font-black text-xl md:text-2xl text-white uppercase tracking-tighter leading-tight mb-3'>

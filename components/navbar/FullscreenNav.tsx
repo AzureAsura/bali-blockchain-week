@@ -46,17 +46,27 @@ const FullscreenNav = () => {
                 <nav className="flex flex-col space-y-2">
                     {navLink.map((item) => (
                         <div key={item.name} className='group flex items-center gap-4 overflow-hidden'>
-                            <ScrollLink
-                                to={item.target}
-                                smooth={true}
-                                duration={900}
-                                offset={-80}
-                                key={item.name}
-                                onClick={closeNav}
-                                className="text-4xl font-bold tracking-tighter hover:tracking-normal hover:text-orange-500 transition-all duration-500 uppercase flex items-center gap-4"
-                            >
-                                {item.name}
-                            </ScrollLink>
+                            {'href' in item && item.href ? (
+                                <Link
+                                    href={item.href}
+                                    onClick={closeNav}
+                                    className="text-4xl font-bold tracking-tighter hover:tracking-normal hover:text-orange-500 transition-all duration-500 uppercase flex items-center gap-4"
+                                >
+                                    {item.name}
+                                </Link>
+                            ) : (
+                                <ScrollLink
+                                    to={item.target}
+                                    smooth={true}
+                                    duration={900}
+                                    offset={-80}
+                                    key={item.name}
+                                    onClick={closeNav}
+                                    className="text-4xl font-bold tracking-tighter hover:tracking-normal hover:text-orange-500 transition-all duration-500 uppercase flex items-center gap-4"
+                                >
+                                    {item.name}
+                                </ScrollLink>
+                            )}
 
                         </div>
                     ))}
